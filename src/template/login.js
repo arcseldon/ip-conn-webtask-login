@@ -51,7 +51,7 @@
     });
   };
 
-  var autoLogin = function () {
+  var autoLogin = function (connInfo) {
     'use strict';
     var auth0 = new Auth0({
       domain: config.auth0Domain,
@@ -77,7 +77,7 @@
   var bodyScript = function (connInfo) {
     'use strict';
     if (validConnectionInfo(connInfo)) {
-      autoLogin();
+      autoLogin(connInfo);
     } else {
       challengeLogin();
     }
