@@ -5,7 +5,11 @@
   "author": "arcseldon",
   "main": "lib/login.html",
   "scripts": {
-    "test": "echo 'not implemented'"
+    "lint": "./node_modules/.bin/eslint --fix src/**/*.js || true",
+    "precompile": "./node_modules/.bin/rimraf build && mkdir -p build",
+    "compile": "node src/tools/build.js",
+    "build": "npm run compile",
+    "test": "Not implemented"
   },
   "keywords": [
     "auth0",
@@ -16,5 +20,21 @@
     "connection",
     "webtask"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.2",
+    "ejs": "^2.4.1",
+    "q": "^1.4.1",
+    "ramda": "^0.19.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "rimraf": "^2.5.1",
+    "sinon": "^1.17.3",
+    "watch": "^0.17.1"
+  }
 }
