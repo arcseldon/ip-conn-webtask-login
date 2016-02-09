@@ -1,0 +1,20 @@
+{
+  "name": "ip-conn-webtask-login",
+  "version": "1.0.0",
+  "description": "How to create a custom auth0 login page that integrates with ip-conn-webtask",
+  "author": "arcseldon",
+  "main": "lib/login.html",
+  "scripts": {
+    "test": "echo 'not implemented'"
+  },
+  "keywords": [
+    "auth0",
+    "ip",
+    "lookup",
+    "ip-conn-webtask",
+    "ip",
+    "connection",
+    "webtask"
+  ],
+  "license": "MIT"
+}
